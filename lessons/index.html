@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script >
+
+        const b=5;
+
+        let family = prompt('Введите вашу Фамилию');
+        let name=prompt('Введите ваше Имя');
+        let firstname=prompt('Введите ваше Отчество');
+        let age=prompt('Введите ваш возвраст');
+        let gender=confirm('ваш пол - мужской?');
+             if (true) {
+                gender='мужской';
+             } else  {
+                gender='женский';
+             }
+             
+
+        let year=age*365;
+        let speed=age+b;
+        let pension=age;
+             if (60>age) {
+                  pension='нет';
+            } else if (60 <= age) {
+                  pension='да';
+            }
+           
+
+        
+        if (confirm("Ваша Анкета"))   {
+                alert(`Ваше ФИО: ${family} ${name} ${firstname}
+                ваш возраст в годах: ${age} 
+                ваш возраст в днях: ${year} 
+                через 5 лет вам будет: ${speed}  
+                ваш пол: ${gender} 
+                вы на пенсии: ${pension}`) 
+                              
+
+        }
+
+
+
+    </script>
+</body>
+</html>
+               
